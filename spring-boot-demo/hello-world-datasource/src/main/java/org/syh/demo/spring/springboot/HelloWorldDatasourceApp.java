@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
 @Slf4j
-public class HelloWorldDatasourceApp implements CommandLineRunner {
+public class HelloWorldDataSourceApp implements CommandLineRunner {
     @Autowired
     private DataSource dataSource;
 
@@ -42,6 +42,6 @@ public class HelloWorldDatasourceApp implements CommandLineRunner {
     }
     
     public static void main(String[] args) {
-        SpringApplication.run(HelloWorldDatasourceApp.class, args);
+        SpringApplication.run(HelloWorldDataSourceApp.class, args);
     }
 }
