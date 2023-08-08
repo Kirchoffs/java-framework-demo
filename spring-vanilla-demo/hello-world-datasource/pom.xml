@@ -4,22 +4,17 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.6</version>
-    </parent>
-
-    <groupId>org.syh.demo.spring.springbatch</groupId>
-    <artifactId>hello-world-more</artifactId>
+    <groupId>org.syh.demo.spring.vanilla</groupId>
+    <artifactId>hello-world-datasource</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>hello-world-more</name>
+    <name>hello-world-datasource</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <spring.version>5.3.29</spring.version>
     </properties>
 
     <dependencies>
@@ -29,27 +24,41 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
-                <groupId>org.springframework.batch</groupId>
-                <artifactId>spring-batch-core</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.2.220</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>hello-world-more</finalName>
         <plugins>
             <!-- clean lifecycle -->
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
-            <!-- default lifecycle, jar packaging -->
+            <!-- default lifecycle -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.0.2</version>
@@ -83,7 +92,6 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.0.0</version>
             </plugin>
-            <!-- others -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
