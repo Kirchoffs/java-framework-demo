@@ -20,7 +20,7 @@ public class HelloWorldDataSourceApp implements CommandLineRunner {
     private DataSource dataSource;
 
     @Autowired
-	private JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     @Override
     public void run(String... args) throws Exception {
