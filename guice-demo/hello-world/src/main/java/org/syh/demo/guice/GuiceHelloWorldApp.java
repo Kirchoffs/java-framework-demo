@@ -12,7 +12,7 @@ public class GuiceHelloWorldApp {
         userService.createUser("ben");
     }
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         Injector injector = Guice.createInjector(new UserModuleConfigure());
         GuiceHelloWorldApp app = injector.getInstance(GuiceHelloWorldApp.class);
         app.start();
