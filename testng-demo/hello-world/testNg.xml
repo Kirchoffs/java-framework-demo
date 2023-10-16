@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "HelloWorldSuite">
+    <test name = "HelloWorldHitotsuTest">
+        <classes>
+            <class name = "org.syh.demo.testng.HelloWorldAlphaTest"/>
+            <class name = "org.syh.demo.testng.HelloWorldBetaTest"/>
+        </classes>
+    </test>
+    <test name = "HelloWorldFutatsuTest">
+        <classes>
+            <class name = "org.syh.demo.testng.HelloWorldGammaTest"/>
+        </classes>
+    </test>
+</suite>
