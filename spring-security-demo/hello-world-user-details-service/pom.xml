@@ -15,10 +15,10 @@
     </parent>
 
     <groupId>org.syh.demo.spring.springsecurity</groupId>
-    <artifactId>hello-world-override-default-configuration</artifactId>
+    <artifactId>hello-world-user-details-service</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>hello-world-override-default-configuration</name>
+    <name>hello-world-user-details-service</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
