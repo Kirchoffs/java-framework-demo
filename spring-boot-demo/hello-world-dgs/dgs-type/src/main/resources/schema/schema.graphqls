@@ -1,0 +1,35 @@
+type Query {
+    shows(titleFilter: String): [Show]
+}
+
+type Mutation {
+    addShow(title: String!, year: Int!, director: DirectorInput!): Show
+}
+
+type Show {
+    title: String
+    year: Int
+    director: Director
+}
+
+type Director {
+    name: String
+    age: Int
+    company: Company
+}
+
+type Company {
+    name: String
+    country: String
+}
+
+input DirectorInput {
+    name: String!
+    age: Int!
+    company: CompanyInput!
+}
+
+input CompanyInput {
+    name: String!
+    country: String!
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>org.syh.demo.spring.springboot</groupId>
+    <artifactId>hello-world-dgs</artifactId> 
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>hello-world-dgs</name>
+      
+    <properties>       
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>       
+        <maven.compiler.source>17</maven.compiler.source>      
+        <maven.compiler.target>17</maven.compiler.target>
+        <dgs.version>8.0.0</dgs.version>
+    </properties>
+      
+    
+    <modules>
+        <module>dgs-server</module>
+        <module>dgs-client</module>
+        <module>dgs-type</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.netflix.graphql.dgs</groupId>
+                <artifactId>graphql-dgs-platform-dependencies</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${dgs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.syh.demo.spring.springboot</groupId>
+                <artifactId>dgs-type</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
