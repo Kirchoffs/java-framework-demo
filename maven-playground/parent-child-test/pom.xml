@@ -1,0 +1,24 @@
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.syh.demo.maven.playground</groupId>
+    <artifactId>parent-child-test</artifactId>
+    <version>${version}</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <version.number>1.2.4</version.number>
+        <version.suffix>RELEASE</version.suffix>
+        <version>${version.number}-${version.suffix}</version>
+    </properties>
+
+    <modules>
+        <module>child-alpha</module>
+    </modules>
+</project>
