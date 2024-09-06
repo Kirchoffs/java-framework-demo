@@ -3,6 +3,7 @@
 
 <suite name = "HelloWorldSuite">
     <test name = "HelloWorldHitotsuTest">
+        <parameter name = "userInternal" value = "Ben"/>
         <classes>
             <class name = "org.syh.demo.testng.HelloWorldAlphaTest"/>
             <class name = "org.syh.demo.testng.HelloWorldBetaTest"/>
