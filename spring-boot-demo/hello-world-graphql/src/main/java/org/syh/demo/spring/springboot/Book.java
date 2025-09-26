@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-@Entity(name="book")
+@Entity(name = "book")
 public class Book {
     @Id 
     @GeneratedValue 
