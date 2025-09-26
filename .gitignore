@@ -1,4 +1,8 @@
-**/.vscode/
-**/.idea/
-**/target/
+.vscode/
+.idea/
+.metals/
+
+target/
+tmp/
+
 .DS_Store
