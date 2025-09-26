@@ -16,14 +16,14 @@ public class PekkoRpcReceiverActor extends AbstractActor {
     private void handleMessageForAlpha(final AlphaPekkoData message) {
         ActorRef sender = getSender();
         ActorRef self = getSelf();
-        System.out.println("Received alpha message: " + message.getInfo());
+        System.out.println("Receiver - received alpha message: " + message.getInfo());
         sender.tell(new AlphaPekkoData("Hi"), self);
     }
 
     private void handleMessageForBeta(final BetaPekkoData message) {
         ActorRef sender = getSender();
         ActorRef self = getSelf();
-        System.out.println("Received beta message: " + message.getInfo());
+        System.out.println("Receiver - received beta message: " + message.getInfo());
         sender.tell(new BetaPekkoData("Hi"), self);
     }
 }
