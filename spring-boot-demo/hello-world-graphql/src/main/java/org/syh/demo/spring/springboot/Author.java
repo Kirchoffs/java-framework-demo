@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-@Entity(name="author")
+@Entity(name = "author")
 public class Author {
     @Id 
     @GeneratedValue 
