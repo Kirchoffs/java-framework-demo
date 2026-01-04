@@ -29,7 +29,8 @@ public class McpClientController {
         
         Arrays.stream(toolCallbackProvider.getToolCallbacks()).forEach(callback -> {
             LOGGER.info("Tool Name: {}", callback.getToolDefinition().name());
-            LOGGER.debug("Description: {}", callback.getToolDefinition().description()); 
+            LOGGER.debug("Description: {}", callback.getToolDefinition().description());
+            LOGGER.debug("Input JSON Schema: {}", callback.getToolDefinition().inputSchema());
         });
         
         LOGGER.info("===== Inspection Finished. Total tools found: {} =====", toolCallbackProvider.getToolCallbacks().length);
