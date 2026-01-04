@@ -21,9 +21,9 @@ public class FigmaTools {
 
     @Tool(name = "get_file", description =
         """
-            Returns the document identified by `fileKey` as a JSON object. 
-            The file key can be parsed from any Figma file url: `https://www.figma.com/file/{fileKey}/{title}`.
-            If no `ids` are provided, prioritize calling this tool.
+        Returns the document identified by `fileKey` as a JSON object. 
+        The file key can be parsed from any Figma file url: `https://www.figma.com/file/{fileKey}/{title}`.
+        If no `ids` are provided, prioritize calling this tool.
         """
     )
     public String getFile(
@@ -37,10 +37,10 @@ public class FigmaTools {
 
     @Tool(name = "get_file_nodes", description =
         """
-            Returns the nodes referenced by `ids` as a JSON object.
-            The node ID and file key can be parsed from any Figma node url: `https://www.figma.com/file/{fileKey}/{title}?node-id={id}`.
-            Generally, if you have the Node IDs and you don't care about the ancestral path to the nodes, you should use this method instead of `get_file`.
-            Because it is more efficient because it fetches only the exact data you need without the overhead of the surrounding document structure.
+        Returns the nodes referenced by `ids` as a JSON object.
+        The node ID and file key can be parsed from any Figma node url: `https://www.figma.com/file/{fileKey}/{title}?node-id={id}`.
+        Generally, if you have the Node IDs and you don't care about the ancestral path to the nodes, you should use this method instead of `get_file`.
+        Because it is more efficient because it fetches only the exact data you need without the overhead of the surrounding document structure.
         """
     )
     public String getFileNodes(
@@ -55,8 +55,8 @@ public class FigmaTools {
 
     @Tool(name = "get_images", description =
         """
-            Render images of file nodes. Returns the URLs for the images of the nodes identified by `ids`.
-            Important: The `ids` parameter is required to know which nodes to convert into images.
+        Render images of file nodes. Returns the URLs for the images of the nodes identified by `ids`.
+        Important: The `ids` parameter is required to know which nodes to convert into images.
         """
     )
     public String getImages(
@@ -70,7 +70,7 @@ public class FigmaTools {
 
     @Tool(name = "get_file_metadata", description =
         """
-            Get file metadata. Returns high-level metadata about the file (name, last modified, creator, version, url, etc).
+        Get file metadata. Returns high-level metadata about the file (name, last modified, creator, version, url, etc).
         """
     )
     public String getFileMetadata(
@@ -84,9 +84,9 @@ public class FigmaTools {
 
     @Tool(name = "get_local_variables", description =
         """
-            Get local variables. Returns the local variables stored in the file identified by `fileKey`.
-            This includes variable collections and the variables themselves.
-            This endpoint requires the file_variables:read scope.
+        Get local variables. Returns the local variables stored in the file identified by `fileKey`.
+        This includes variable collections and the variables themselves.
+        This endpoint requires the file_variables:read scope.
         """
     )
     public String getLocalVariables(

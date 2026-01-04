@@ -43,3 +43,9 @@ Go to `http://localhost:8080/h2-console`.
 
 >> curl -G -H "username: Tom" --data-urlencode "message=I can access my profile now, please update my ticket." http://localhost:8080/api/tools/help-desk
 ```
+
+```
+>> curl -G -H "username: Leo" --data-urlencode "message=Today afternoon after 5 PM I am not able to access my profile, it says unexpected error. My account name is Leo, and my email is leo1618@gmail.com. You can create the ticket directly if you think it is necessary." http://localhost:8080/api/tools/help-desk
+
+>> curl -G -H "username: Leo" --data-urlencode "message=I can access my profile now, please update my ticket, and leave no reason or comment in the ticket." http://localhost:8080/api/tools/help-desk
+```

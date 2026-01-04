@@ -42,7 +42,7 @@ public class BeanUtilsTest {
     }
 
     @Data
-    private static class UserPO {
+    public static class UserPO {
         private Long id;
         private String username;
         private String password;
@@ -51,7 +51,7 @@ public class BeanUtilsTest {
     }
 
     @Data
-    private static class UserDTO {
+    public static class UserDTO {
         private String username;
         private Integer age;
         private List<String> tags;

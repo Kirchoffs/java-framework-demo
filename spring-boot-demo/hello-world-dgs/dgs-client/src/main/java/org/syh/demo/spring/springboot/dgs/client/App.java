@@ -1,7 +1,7 @@
-package org.syh.demo.spring.springboot;
+package org.syh.demo.spring.springboot.dgs.client;
 
 import org.springframework.web.client.RestClient;
-import org.syh.demo.spring.springboot.request.RequestBuilder;
+import org.syh.demo.spring.springboot.dgs.client.request.RequestBuilder;
 
 import com.netflix.graphql.dgs.client.codegen.GraphQLQueryRequest;
 

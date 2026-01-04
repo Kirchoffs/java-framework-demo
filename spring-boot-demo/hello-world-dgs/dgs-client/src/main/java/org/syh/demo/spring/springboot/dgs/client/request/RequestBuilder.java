@@ -1,4 +1,4 @@
-package org.syh.demo.spring.springboot.request;
+package org.syh.demo.spring.springboot.dgs.client.request;
 
 import org.syh.demo.spring.springboot.dgs.type.client.AddShowGraphQLQuery;
 import org.syh.demo.spring.springboot.dgs.type.client.ShowsGraphQLQuery;
